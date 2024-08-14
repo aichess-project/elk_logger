@@ -1,0 +1,5 @@
+logstash_url: "http://localhost:5001"
+elk_index: "log_testing"
+fallback_file: "app.log"
+max_file_size: 5242880  # 5 MB in bytes
+backup_count: 5

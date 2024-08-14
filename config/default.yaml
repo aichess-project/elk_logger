@@ -1,0 +1,13 @@
+log_level: INFO
+log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+file_logging:
+  enabled: true
+  filename: "app.log"
+  max_file_size: 5242880  # 5 MB
+  backup_count: 5
+
+elk_logging:
+  enabled: false
+  logstash_url: "http://localhost:5000"
+  index: "log_testing"
